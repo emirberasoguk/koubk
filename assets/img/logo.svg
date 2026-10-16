@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="kouRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E52D37"/>
+      <stop offset="100%" stop-color="#9E131A"/>
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Arka Plan Yuvarlak Kalkan -->
+  <rect width="512" height="512" rx="128" fill="#121319"/>
+  <rect x="6" y="6" width="500" height="500" rx="122" stroke="url(#kouRed)" stroke-width="4" stroke-opacity="0.4"/>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#glassGrad)"/>
+
+  <!-- KOUBK Monogram & Kodlama Sembolleri -->
+  <g transform="translate(40, 40)">
+    <!-- Sol Açılı Parantez < -->
+    <path d="M 120 160 L 50 216 L 120 272" stroke="url(#kouRed)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+    
+    <!-- Sağ Açılı Parantez > -->
+    <path d="M 312 160 L 382 216 L 312 272" stroke="url(#kouRed)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+    
+    <!-- Merkez K Harfi & Devre Yolu -->
+    <path d="M 176 140 L 176 292" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"/>
+    <path d="M 256 144 L 184 216 L 260 290" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Bağlantı Noktaları (Node/Terminal) -->
+    <circle cx="176" cy="140" r="8" fill="#E52D37"/>
+    <circle cx="176" cy="292" r="8" fill="#E52D37"/>
+    <circle cx="256" cy="144" r="8" fill="#E52D37"/>
+    <circle cx="260" cy="290" r="8" fill="#E52D37"/>
+
+    <!-- Alt KOUBK Tipografi -->
+    <text x="216" y="375" text-anchor="middle" font-family="'Poppins', 'Inter', -apple-system, sans-serif" font-weight="900" font-size="44" letter-spacing="8" fill="#FFFFFF">KOUBK</text>
+    <text x="216" y="405" text-anchor="middle" font-family="'Poppins', 'Inter', -apple-system, sans-serif" font-weight="600" font-size="14" letter-spacing="3" fill="#A0A5B5">BİLGİSAYAR KULÜBÜ</text>
+  </g>
+</svg>
